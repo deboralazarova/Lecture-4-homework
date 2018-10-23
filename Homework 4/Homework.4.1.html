@@ -17,38 +17,48 @@
 </style>
 
 <body>
+    <!-- Гледай да подреждаш таговете спрямо йерархията им -->
     <header>
-    <table width="100%">
-        <tbody>
-        <td>
-            <img src="Images/logo.png" />
-        </td>
-        <td>
-            <a href="Homework.4.1.html">Content</a>
-        </td>
-        <td>
-            <a href="Homework.4.2.html">Contact us</a>
-        </td>
-        <td>
-            <a href="Homework.4.3.html">Gallery</a>
-        </td>
-        </tbody>
-    </table>
+        <table width="100%">
+            <tbody>
+                <td>
+                    <img src="Images/logo.png" />
+                </td>
+                <td>
+                    <a href="Homework.4.1.html">Content</a>
+                </td>
+                <td>
+                    <a href="Homework.4.2.html">Contact us</a>
+                </td>
+                <td>
+                    <a href="Homework.4.3.html">Gallery</a>
+                </td>
+            </tbody>
+        </table>
     </header>
     <br />
     <br />
-    <a href="Homework.4.1.html">Planets</a>
+    <!-- Идеята е, че това ще играе ролята на breadchrumb, тъй че можеш без проблем да го обвиеш в <nav> -->
+    <nav>
+        <a href="Homework.4.1.html">Planets</a>
+    </nav>
 
     <article>
 
         <h1>Solar system</h1>
         <table>
             <tr>
-                <td>
-                    The Solar System is the gravitationally bound system of the Sun and the objects that orbit it, either directly
-                    <br />or indirectly,including the eight planets and five dwarf planets as defined by the International Astronomical
-                    <br />Union (IAU). Of the objects that orbit the Sun directly, the largest eight are the planets, with the remainder
-                    <br />being smaller objects, such as dwarf planets and small Solar System bodies.
+                <td width="900">
+                    <!--Тук е прекрасно място да сложиш <p> -->
+                    <p>
+                        The Solar System is the gravitationally bound system of the Sun and the objects that orbit it, either directly
+                        <!-- не е необходимо да слагаш <br/> навсякъде, можеш да се възползваш от факта, че браузъра сам ще пренесе текста
+                        на няколко реда ако не може да побере съдържанието. Ако искаш да накараш картинката да не се забива в дясната част
+                        можеш да сложиш width атрибут на parent <td> тага  -->
+                        or indirectly,including the eight planets and five dwarf planets as defined by the International Astronomical
+                        Union (IAU). Of the objects that orbit the Sun directly, the largest eight are the planets, with the remainder
+                        being smaller objects, such as dwarf planets and small Solar System bodies.
+                    </p>
                 </td>
                 <td rowspan="4">
                     <map name="solarSystem">
@@ -92,17 +102,19 @@
             </tr>
         </table>
 
-        <ol>
-            <li><a href="Planets/Mercury.html" name="planet1">Mercury</a></li>
-            <li><a href="Planets/Venus.html" name="planet2">Venus</a></li>
-            <li><a href="Planets/Earth.html" name="planet3">Earth</a></li>
-            <li><a href="Planets/Mars.html" name="planet4">Mars</a></li>
-            <li><a href="Planets/Jupiter.html" name="planet5">Jupiter</a></li>
-            <li><a href="Planets/Saturn.html" name="planet6">Saturn</a></li>
-            <li><a href="Planets/Uranus.html" name="planet7">Uranus</a></li>
-            <li><a href="Planets/Neptune.html" name="planet8">Neptune</a></li>
-        </ol>
-
+        <!-- Това по съществото си е навигация. Можеш да обвиеш <ol> тага в <nav> -->
+        <nav>
+            <ol>
+                <li><a href="Planets/Mercury.html" name="planet1">Mercury</a></li>
+                <li><a href="Planets/Venus.html" name="planet2">Venus</a></li>
+                <li><a href="Planets/Earth.html" name="planet3">Earth</a></li>
+                <li><a href="Planets/Mars.html" name="planet4">Mars</a></li>
+                <li><a href="Planets/Jupiter.html" name="planet5">Jupiter</a></li>
+                <li><a href="Planets/Saturn.html" name="planet6">Saturn</a></li>
+                <li><a href="Planets/Uranus.html" name="planet7">Uranus</a></li>
+                <li><a href="Planets/Neptune.html" name="planet8">Neptune</a></li>
+            </ol>
+        </nav>
     </article>
 
 </body>
